@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".NewTimeEntry">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_new_entry"
+        android:tooltipText="Track In Time History"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/red"/>
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/red"
+        android:text="Have a great drive!"
+        android:textSize="34sp" />
+
+    <Button
+        android:id="@+id/btnDriveStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="75dp"
+        android:background="@color/red"
+        android:backgroundTint="@color/red"
+        android:foregroundTint="@color/red"
+        android:padding="15dp"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:text="Start Drive" />
+
+    <Button
+        android:id="@+id/btnDriveFinish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="75dp"
+        android:background="@color/red"
+        android:padding="15dp"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:text="Drive Finished" />
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/mainMenuFragment">
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.geez.drivetime.view.fragments.MainMenuFragment"
+        android:label="MainMenuFragment" >
+        <action
+            android:id="@+id/action_mainMenu_to_driveHistory"
+            app:destination="@id/driveHistoryFragment" />
+        <action
+            android:id="@+id/action_mainMenu_to_newDrive"
+            app:destination="@id/newDriveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/driveHistoryFragment"
+        android:name="com.geez.drivetime.view.fragments.DriveHistoryFragment"
+        android:label="DriveHistoryFragment" >
+        <action
+            android:id="@+id/action_driveHistory_to_addUpdateDrive"
+            app:destination="@id/addUpdateDriveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newDriveFragment"
+        android:name="com.geez.drivetime.view.fragments.NewDriveFragment"
+        android:label="NewDriveFragment" />
+    <fragment
+        android:id="@+id/addUpdateDriveFragment"
+        android:name="com.geez.drivetime.view.fragments.AddUpdateDriveFragment"
+        android:label="AddUpdateDriveFragment" />
+</navigation>
